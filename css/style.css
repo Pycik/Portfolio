@@ -102,7 +102,7 @@ a:hover {
   display: flex;
   height: 60px;
   width: 100%;
-  background: #111;
+  background: #080807;
   color: #D9EF34;
   font-weight: 900;
 }
@@ -143,7 +143,7 @@ a:hover {
   position: relative;
   top: 15px;
   left: 15px;
-  position: fixed;
+  position: absolute;
   display: block;
   width: 100px;
   height: 100px;
@@ -239,19 +239,19 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
-.top_block .menu .nav_menu .btn_menu:hover span {
+.top_block .menu .nav_menu .btn_menu:hover .no_active span {
   background: #32FFB0;
 }
 
-.top_block .menu .nav_menu .btn_menu:hover span:before {
+.top_block .menu .nav_menu .btn_menu:hover .no_active span:before {
   background: #32FFB0;
 }
 
-.top_block .menu .nav_menu .btn_menu:hover span:after {
+.top_block .menu .nav_menu .btn_menu:hover .no_active span:after {
   background: #32FFB0;
 }
 
-.top_block .menu .nav_menu .btn_menu span {
+.top_block .menu .nav_menu .btn_menu .no_active span {
   display: block;
   height: 2px;
   width: 18px;
@@ -261,33 +261,70 @@ a:hover {
   margin-left: -9px;
   top: 50%;
   margin-top: -1px;
+  transition: 3s;
 }
 
-.top_block .menu .nav_menu .btn_menu span:before {
+.top_block .menu .nav_menu .btn_menu .no_active span:before {
   content: "";
   height: 2px;
   width: 18px;
   background: #D9EF34;
   position: absolute;
   margin-top: 5px;
+  transition: 2s;
 }
 
-.top_block .menu .nav_menu .btn_menu span:after {
+.top_block .menu .nav_menu .btn_menu .no_active span:after {
   content: "";
   height: 2px;
   width: 18px;
   background: #D9EF34;
   position: absolute;
   margin-top: 10px;
+  transition: 2s;
+}
+
+.top_block .menu .nav_menu .btn_menu .active span {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: #111;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.top_block .menu .nav_menu .btn_menu .active span:before {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: red;
+  position: absolute;
+  margin-top: 5px;
+  transform: rotate(135deg);
+  transition: 3s;
+}
+
+.top_block .menu .nav_menu .btn_menu .active span:after {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: red;
+  position: absolute;
+  margin-top: 6px;
+  transform: rotate(-135deg);
+  transition: 3s;
 }
 
 .top_block .menu .nav_menu .nav_menu_active {
-  background: #111;
-  height: 740px;
+  background: url(../img/bg1.png);
   width: 405px;
   position: absolute;
   left: -145px;
   top: 60px;
+  display: none;
 }
 
 .top_block .menu .nav_menu .nav_menu_active:hover {

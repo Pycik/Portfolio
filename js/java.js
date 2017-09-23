@@ -36,8 +36,7 @@ $(document).ready(function() {
   $('.circle-transparent').on('click', function() {
   	var circleMenu = $(".menu-circle");
   
-  if (!active1) $(circleMenu).find('.menu-item1').css({
-    
+  if (!active1) $(circleMenu).find('.menu-item1').css({    
     'border': '4px solid  #D9EF34',  
     'transform': 'translate(0px,125px)'
   });
@@ -45,8 +44,7 @@ $(document).ready(function() {
     'transform': 'none'
   }); 
   
-  if (!active2) $(circleMenu).find('.menu-item2').css({
-    
+  if (!active2) $(circleMenu).find('.menu-item2').css({    
     'border': '3px solid  #D9EF34', 
     'transform': 'translate(80px,90px)'
   });
@@ -54,8 +52,7 @@ $(document).ready(function() {
     'transform': 'none'
   });
 
-  if (!active3) $(circleMenu).find('.menu-item3').css({
-   
+  if (!active3) $(circleMenu).find('.menu-item3').css({   
     'border': '2px solid  #D9EF34',
     'transform': 'translate(125px,25px)'
   });
@@ -69,4 +66,21 @@ $(document).ready(function() {
   
     
   });
+});
+
+
+$(document).ready(function (){
+
+	var btnMenuActive = $(".btn_menu");
+		menuActive = $(".nav_menu_active.text-center");
+		btnClickShow = $(".btn_menu .no_active");
+		btnClickHide = $(".btn_menu .active");
+
+	$(btnMenuActive).on("click",function(){
+		$(menuActive).slideToggle(1000);
+		$(btnClickShow).toggleClass("no_active");
+		$(btnClickShow).toggleClass("active");			
+
+	});
+
 });

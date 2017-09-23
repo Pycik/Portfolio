@@ -76,7 +76,7 @@ a:hover {
 	display:flex;	
 	height: 60px;
 	width: 100%;
-	background: #111;
+	background: #080807;
 	color: #D9EF34;
 	font-weight: 900;
 		
@@ -117,7 +117,7 @@ a:hover {
 				position:relative;				
 				top: 15px;
 				left: 15px;
-				position: fixed;
+				position: absolute;
 				display: block;
 				width: 100px;
 				height: 100px;
@@ -147,6 +147,7 @@ a:hover {
 				  color: #FFFB1E;
 				  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .1s;
 
+				
 				  &:hover, &:hover a {
 				  	color:#32FFB0;
 				  	transition: all .5s				  	
@@ -172,7 +173,8 @@ a:hover {
 			width: 260px;
 			display: flex;
 			justify-content: space-between;
-			position:relative;
+			position:relative;			
+
 
 			.myname {
 				font-weight: 900;
@@ -210,65 +212,121 @@ a:hover {
 			    background: #111;
 			    margin-top: -10px;	
 
+
+
 			    &:hover {   
 					animation: shake 0.7s; 
 					animation-iteration-count: infinite; 
+				
+				    	.no_active span {
+				    		background:#32FFB0;
 
-			    	span {
-			    		background:#32FFB0;			    		
 
-			    		&:before {			    		
-			    			background:#32FFB0;
+				    		&:before {			    		
+				    			background:#32FFB0;
+				    			
 
-			    		}
-			    		 &:after {
-			    			background: #32FFB0;
-			    			
-			    		 }
 
-			    	}
+				    		}
+				    		 &:after {
+				    			background: #32FFB0;
+				    			
+				    			
+				    		 }
+
+				    	}   	
+
 			    }		    
 			    
 
-				span {					
-				     	display: block;
-					    height: 2px;
-					    width: 18px;
-					    background: #D9EF34;
-					    position: absolute;
-					    left: 50%;
-					    margin-left: -9px;
-					    top: 50%;
-					    margin-top: -1px;		
 
-				    &:before {
-				    	content: "";
-					    height: 2px;
-					    width: 18px;
-					    background: #D9EF34;
-					    position: absolute;				    
-					    margin-top: 5px;				    
+			    .no_active {
 
-				    }	
-				    &:after {
-				    	content: "";
-					    height: 2px;
-					    width: 18px;
-					    background: #D9EF34;
-					    position: absolute;				    
-					    margin-top: 10px;					   	
-				    }	    
+					span {					
+					     	display: block;
+						    height: 2px;
+						    width: 18px;
+						    background: #D9EF34;
+						    position: absolute;
+						    left: 50%;
+						    margin-left: -9px;
+						    top: 50%;
+						    margin-top: -1px;	
+						    transition: 3s;		
+
+					    &:before {
+					    	content: "";
+						    height: 2px;
+						    width: 18px;
+						    background: #D9EF34;
+						    position: absolute;			    
+						    margin-top: 5px;
+						    transition: 2s;					    
+
+					    }	
+					    &:after {
+					    	content: "";
+						    height: 2px;
+						    width: 18px;
+						    background: #D9EF34;
+						    position: absolute;			    
+						    margin-top: 10px;
+						    transition: 2s;						   	
+					    }	    
+					}
+
+				}
+
+				.active {					
+
+
+					span {					
+					     	display: block;
+						    height: 2px;
+						    width: 18px;
+						    background: #111;
+						    position: absolute;
+						    left: 50%;
+						    margin-left: -9px;
+						    top: 50%;
+						    margin-top: -1px;	
+
+
+					    &:before {
+					    	content: "";
+						    height: 2px;
+						    width: 18px;
+						    background: red;
+						    position: absolute;			    
+						    margin-top: 5px;	
+						    transform: rotate(135deg);	
+						    transition: 3s;			    
+
+					    }	
+					    &:after {
+					    	content: "";
+						    height: 2px;
+						    width: 18px;
+						    background: red;
+						    position: absolute;			    
+						    margin-top: 6px;
+						    transform: rotate(-135deg);	
+						    transition: 3s;					   	
+					    }	    
+					}
+
 				}
 
 			}
 
 			.nav_menu_active {
-				background: #111;
-				height:740px;
+				background: url(../img/bg1.png);
+				
 				width: 405px;
 				position: absolute;
 				left: -145px;
 				top: 60px;
+				display: none;
 
 				&:hover {
 					border: none;
