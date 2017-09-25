@@ -84,3 +84,37 @@ $(document).ready(function (){
 	});
 
 });
+
+
+$(document).ready(function (){
+
+	var btnMenuActiveScroll = $(".btn_menu_scroll");
+		menuActiveScroll = $(".nav_menu_active_scroll.text-center");
+		btnClickShowScroll = $(".btn_menu_scroll .no_active");
+		btnClickHide = $(".btn_menu_scroll .active");
+
+	$(btnMenuActiveScroll).on("click",function(){
+		$(menuActiveScroll).slideToggle(1000);
+		$(btnClickShowScroll).toggleClass("no_active");
+		$(btnClickShowScroll).toggleClass("active");			
+
+	});
+
+});
+
+$(document).ready(function (){
+
+var menu2Scroll = $('.menu2_scroll');
+var top = menu2Scroll.css('top');
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 250) {
+            menu2Scroll.stop().animate({'top' : '0px'}, 1000);
+        } else {
+            menu2Scroll.stop().animate({'top' : top}, 200);
+        }
+    });
+
+
+});
+
