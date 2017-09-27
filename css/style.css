@@ -117,6 +117,18 @@ a:hover {
   }
 }
 
+@keyframes move_right {
+  from {
+    padding-left: 0px;
+  }
+  50% {
+    padding-left: 100px;
+  }
+  to {
+    padding-left: 0px;
+  }
+}
+
 .top_block {
   position: relative;
   height: 100vh;
@@ -129,6 +141,10 @@ a:hover {
   position: fixed;
   top: -60px;
   z-index: 10;
+}
+
+.top_block .menu2_scroll .topnav.topnav_scroll {
+  background: url(../img/transparent-hash.png);
 }
 
 .top_block .menu, .top_block .menu2_scroll {
@@ -512,5 +528,240 @@ a:hover {
 }
 
 .center_block .text-center.text {
-  margin: 50px 50px 20px 70px;
+  margin: 50px 50px 80px 70px;
+}
+
+.middle_block {
+  height: 700px;
+  width: 100%;
+  background: #030A16;
+  color: #FFCE25;
+  font-weight: 900;
+}
+
+.middle_block .content_block {
+  height: 600px;
+  width: 100%;
+  background: url(../img/bg2.png) no-repeat;
+}
+
+.middle_block .content_block .text-center {
+  font-size: 32px;
+  text-shadow: 3px 3px 20px #4BCCC0;
+  letter-spacing: 5px;
+  padding: 60px 0 0 150px;
+}
+
+.middle_block .content_block h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.middle_block .content_block .text_content {
+  width: 300px;
+  padding: 0 0 0 0px;
+  float: right;
+  text-align: center;
+  padding: 170px 0 0 8px;
+}
+
+.middle_block .content_block .text_content2 {
+  width: 350px;
+  float: left;
+  padding: 265px 0 0 160px;
+}
+
+.science_block {
+  min-height: 500px;
+  width: 100%;
+  background: url(../img/cartographer.png) center fixed;
+  background-size: cover;
+}
+
+.science_block .block_left {
+  margin: 60px 0;
+  position: relative;
+  height: 500px;
+}
+
+.science_block .block_left h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  margin-top: 20px;
+  color: #4BCCC0;
+  text-shadow: 3px 3px 20px #00C0DB;
+  text-align: center;
+}
+
+.science_block .block_left p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #FFBA00;
+  line-height: 28px;
+}
+
+.science_block .block_left .fa {
+  padding-top: 20px;
+  color: #D9EF34;
+  animation: move_right 2s infinite ease-in-out, shadow 2s infinite ease-in-out;
+}
+
+.science_block .block_left .down {
+  position: absolute;
+  bottom: 0;
+  color: #FF9670;
+}
+
+.science_block .block_right {
+  margin: 60px 0 0;
+  height: 600px;
+  width: 100%;
+  background: url(../img/iphone.png) no-repeat;
+}
+
+.science_block .block_right .content {
+  width: 233px;
+  padding-left: 20px;
+}
+
+.science_block .block_right .content h2 {
+  color: #4BCCC0;
+  text-shadow: 3px 3px 20px #00C0DB;
+  padding: 90px 0 25px 7px;
+  font-size: 20px;
+}
+
+.science_block .block_right .content h2:hover {
+  color: #32ACD5;
+  text-shadow: 3px 3px 10px #002FEF;
+}
+
+.science_block .block_right .content li {
+  position: relative;
+  padding: 0 0 12px 40px;
+  font-size: 20px;
+  color: #D9EF34;
+}
+
+.science_block .block_right .content li a {
+  color: #FFBA00;
+}
+
+.science_block .block_right .content li a:hover {
+  color: #FF5C22;
+}
+
+.science_block .block_right .content li:before {
+  height: 10px;
+  width: 10px;
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.science_block .block_right .content li:hover:before {
+  background: #1CA61C;
+}
+
+.science_block .block_right .content .down {
+  color: #FF9670;
+  padding: 23px 0 0 30px;
+}
+
+.people_think {
+  height: 650px;
+  width: 100%;
+  background: url(../img/black_scales.png) center fixed;
+}
+
+.people_think h2 {
+  margin: 60px 0 70px 0;
+  color: #B378FF;
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 900;
+  text-shadow: 1px 2px 20px #59135F;
+}
+
+.people_think .slider-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.people_think .slider-container:hover .fa-angle-left.slick-arrow, .people_think .slider-container:hover .fa-angle-right.slick-arrow {
+  opacity: 1 !important;
+}
+
+.people_think .slider-media {
+  width: 40%;
+}
+
+.people_think .slider-media img {
+  width: 450px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.people_think .slider-text {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.people_think .slider-media > .slick-slider {
+  margin-bottom: 0;
+}
+
+.people_think .carousel-images > .slick-list {
+  padding: 0 !important;
+}
+
+.people_think .carousel-images > .slick-list > .slick-slide {
+  width: 350px !important;
+}
+
+.people_think .carousel-text {
+  position: relative;
+}
+
+.people_think .carousel-text .title {
+  color: #1DAC0E;
+  padding-top: 50px;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.people_think .carousel-text .headline {
+  padding-top: 30px;
+  color: #999;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.people_think .carousel-text .fa-angle-left.slick-arrow {
+  position: absolute;
+  top: 145px;
+  left: -132%;
+  color: #D9EF34;
+  opacity: 0;
+  transition: 3s;
+}
+
+.people_think .carousel-text .fa-angle-right.slick-arrow {
+  position: absolute;
+  top: 145px;
+  color: #D9EF34;
+  right: -28%;
+  opacity: 0;
+  transition: 3s;
+}
+
+.people_think .lime {
+  color: #D9EF34;
 }

@@ -118,3 +118,25 @@ var top = menu2Scroll.css('top');
 
 });
 
+
+$(document).ready(function () {
+            $('.text-slides').slick({ 
+                fade: true,
+                arrows: true,             
+                asNavFor: '.slider-nav',
+                nextArrow: '<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>',
+                prevArrow: '<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>',
+            });
+
+            $('.slider-nav').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.text-slides',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                autoplay: false,
+                mobileFirst:true,
+                arrows:false,
+            });
+});
