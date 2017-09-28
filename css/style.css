@@ -765,3 +765,86 @@ a:hover {
 .people_think .lime {
   color: #D9EF34;
 }
+
+.company {
+  height: 250px;
+  width: 100%;
+  background: url(../img/cartographer.png) center fixed;
+}
+
+.company h2 {
+  text-align: center;
+  font-size: 24px;
+  padding: 30px 0;
+  color: #00C7F1;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px #444;
+}
+
+.company .slider-company .item {
+  margin: 0 60px;
+}
+
+.company .slider-company .item img {
+  height: 100px;
+}
+
+.offer {
+  min-height: 500px;
+  width: 100%;
+  background: url(../img/black_scales.png) center fixed;
+}
+
+.offer .content {
+  color: #5BD2D2;
+  height: 600px;
+  width: 100%;
+  background: url(../img/bg3.png) no-repeat center;
+}
+
+.offer .content .top_content {
+  padding-top: 38px;
+  color: #D9EF34;
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.offer .content .top_content h2 {
+  margin-left: -33%;
+}
+
+.offer .content .top_content .right {
+  margin-left: -6%;
+  padding-left: 19%;
+  transform: rotate(30deg);
+  font-size: 32px;
+}
+
+.offer .content .left_content, .offer .content .right_content {
+  padding-top: 160px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  line-height: 48px;
+}
+
+.offer .content .left_content.left, .offer .content .right_content.left {
+  margin: -64px -36px 0 156px;
+}
+
+.offer .content .left_content.right, .offer .content .right_content.right {
+  padding: 276px 55px 0 0;
+  margin-left: -72px;
+}
+
+footer {
+  height: 120px;
+  width: 100%;
+  background: #142C3B;
+  color: #75BC1E;
+  font-size: 18px;
+  padding-top: 30px;
+  line-height: 36px;
+}

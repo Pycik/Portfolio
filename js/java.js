@@ -122,7 +122,8 @@ var top = menu2Scroll.css('top');
 $(document).ready(function () {
             $('.text-slides').slick({ 
                 fade: true,
-                arrows: true,             
+                arrows: true,  
+                dots: false,           
                 asNavFor: '.slider-nav',
                 nextArrow: '<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>',
                 prevArrow: '<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>',
@@ -135,8 +136,26 @@ $(document).ready(function () {
                 dots: false,
                 centerMode: true,
                 focusOnSelect: true,
-                autoplay: false,
+                autoplay: true,
                 mobileFirst:true,
                 arrows:false,
             });
 });
+
+
+
+$(document).ready(function () {
+
+		$('.slider-company').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,		  
+		  autoplaySpeed: 1000,
+		  lazyLoad: 'ondemand',
+		  variableWidth: true, 	
+		  arrows:false,
+		  autoplay: true,
+		  dots: false,
+		});
+
+});
+
