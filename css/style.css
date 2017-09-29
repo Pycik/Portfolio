@@ -840,7 +840,7 @@ a:hover {
 }
 
 footer {
-  height: 120px;
+  min-height: 120px;
   width: 100%;
   background: #142C3B;
   color: #75BC1E;

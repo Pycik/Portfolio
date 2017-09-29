@@ -159,3 +159,29 @@ $(document).ready(function () {
 
 });
 
+$(function(){	
+	$(".cisco").hover(function(){
+		$(this).children().stop().animate({marginTop:'100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginTop:'0%',opacity:1},600);	
+	});
+
+});
+
+
+$(function(){	
+	$(".front").hover(function(){
+		$(this).children().stop().animate({marginLeft:'100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginLeft:'0%',opacity:1},200);	
+	});
+});
+
+$(function(){	
+	$(".back").hover(function(){
+		$(this).children().stop().animate({marginTop:'100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginTop:'0%',opacity:1},600);	
+	});
+});
+
