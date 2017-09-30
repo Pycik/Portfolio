@@ -2,14 +2,18 @@ $(document).ready(function (){
 
 	$(".top_block .logo").hover(function(){
 		$(".top_block .nav_menu .myname").toggle();		
-	});
+	});	
 
 	$(".top_block .circle-transparent").hover(function(){
 		$(".top_block .nav_menu .clickMe").toggle();
 		$(".top_block .nav_menu .myname").toggle();
-		$(".top_block .myjobs").toggle();	
-		
-	});	
+		$(".top_block .myjobs").toggle();		
+	});
+
+	$(".top_block .menu-item1").click(function(){
+		$(".top_block .menu .logo .card").toggle(1000);		
+	});
+
 
 	$(".top_block .menu-item2").hover(function(){
 		$(".top_block .nav_menu .myname").toggle();		
@@ -22,7 +26,6 @@ $(document).ready(function (){
 		$(".top_block .writeme").toggle();	
 
 	});
-
 });
 
 
@@ -66,6 +69,12 @@ $(document).ready(function() {
   
     
   });
+});
+
+$(document).ready(function (){
+	$(".top_block .circle-transparent").click(function(){
+		$(".top_block .menu .logo .card:visible").slideToggle(1000);	
+	});
 });
 
 
@@ -170,18 +179,18 @@ $(function(){
 
 
 $(function(){	
-	$(".front").hover(function(){
+	$(".font_container .front").hover(function(){
 		$(this).children().stop().animate({marginLeft:'100%',opacity:0},600);
 	},function(){
-		$(this).children().stop().animate({marginLeft:'0%',opacity:1},200);	
+		$(this).children().stop().animate({marginLeft:'0%',opacity:1},100);	
 	});
 });
 
 $(function(){	
-	$(".back").hover(function(){
+	$(".font_container .back").hover(function(){
 		$(this).children().stop().animate({marginTop:'100%',opacity:0},600);
 	},function(){
-		$(this).children().stop().animate({marginTop:'0%',opacity:1},600);	
+		$(this).children().stop().animate({marginTop:'0%',opacity:1},300);	
 	});
 });
 

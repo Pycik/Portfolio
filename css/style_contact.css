@@ -1,7 +1,89 @@
 .top_block {
-  background: silver;
+  background: #171718;
+  color: #FFFF00;
+  font-weight: 900;
+  overflow: hidden;
 }
 
-.center_block .block {
-  color: red;
+.top_block .adress_content .contacts {
+  height: 100vh;
+  width: 300px;
+  background: url(../img/bg1.png);
+  position: absolute;
+  width: 100%;
+  padding-top: 40%;
+}
+
+.top_block .adress_content .contacts:before {
+  position: absolute;
+  content: "";
+  background: url(../img/bg1.png);
+  top: 0;
+  right: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top_block .adress_content .contacts ul {
+  padding-top: 40%;
+}
+
+.top_block .adress_content .contacts ul li {
+  padding: 0 0 30px 30px;
+  position: relative;
+  font-size: 20px;
+}
+
+.top_block .adress_content .contacts ul li:nth-child(1):before {
+  position: absolute;
+  content: "";
+  background: url(../img/sprite.png) no-repeat -174px -5px;
+  top: -5px;
+  left: -20px;
+  height: 26px;
+  width: 26px;
+}
+
+.top_block .adress_content .contacts ul li:nth-child(2):before {
+  position: absolute;
+  content: "";
+  background: url(../img/sprite.png) no-repeat -143px -5px;
+  top: -5px;
+  left: -20px;
+  height: 28px;
+  width: 28px;
+}
+
+.top_block .adress_content .contacts ul li:nth-child(3):before {
+  position: absolute;
+  content: "";
+  background: url(../img/sprite.png) no-repeat -205px -3px;
+  top: -5px;
+  left: -20px;
+  height: 30px;
+  width: 30px;
+}
+
+.top_block .adress_content .contacts ul li:nth-child(4):before {
+  position: absolute;
+  content: "";
+  background: url(../img/sprite.png) no-repeat -109px -3px;
+  top: -5px;
+  left: -20px;
+  height: 30px;
+  width: 29px;
+}
+
+.top_block .adress_content .contacts ul li:nth-child(5):before {
+  position: absolute;
+  content: "";
+  background: url(../img/sprite.png) no-repeat -269px -4px;
+  top: -5px;
+  left: -20px;
+  height: 30px;
+  width: 30px;
+}
+
+.top_block .adress_content .map {
+  padding-top: 40%;
 }

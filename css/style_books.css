@@ -1,0 +1,18 @@
+.top_block {
+  background: url(../img/school.png);
+}
+
+.top_block .middle_section {
+  color: #111;
+  padding-top: 20%;
+  font-weight: 900;
+}
+
+.top_block .middle_section span {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.top_block .middle_section h2 {
+  font-size: 28px;
+}
