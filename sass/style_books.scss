@@ -1,9 +1,11 @@
 .top_block {
 	background: url(../img/school.png);
+	height: 100%;
 
 	.middle_section {
 		color: #111;
-		padding-top: 20%;
+		padding-top: 5%;
+		padding-left: 15%;
 		font-weight: 900;
 
 		span {	
@@ -14,5 +16,19 @@
 			font-size: 28px;
 		}
 
+		.book_block {
+			height: 300px;
+			width: 220px;
+			background: #111;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.books {
+			padding-bottom: 80px;
+		}
 	}
 }

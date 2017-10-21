@@ -194,3 +194,22 @@ $(function(){
 	});
 });
 
+$(function(){	
+	$(".tester_container .dev").hover(function(){
+		$(this).children().stop().animate({marginLeft:'100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginLeft:'0%',opacity:1},300);	
+	});
+});
+
+$(function(){	
+	$(".tester_container .test").hover(function(){
+		$(this).children().stop().animate({marginLeft:'-100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginLeft:'0%',opacity:1},300);	
+	});
+});
+
+
+
+

@@ -1,5 +1,5 @@
 .top_block {
-	height: 1400px;
+	height: 100%;
 	width: 100%;
 	background: #030A16;
 	color: #B378FF;
@@ -210,7 +210,49 @@
 				}
 			
 			}
+			
 		}
+
+			.booksRead {
+				width: 100%;
+				transform: rotate(-90deg);
+				margin: 180px 0 0 -20px;				
+				font-size: 24px;
+				text-transform: uppercase;
+
+				a {
+					color: #994900;		
+					transition: 2s;		
+				}
+
+				&:before {					
+					content: "";
+					position: absolute;
+					left:-75px;
+					top: 10px;
+					height: 41px;
+					width: 49px;
+					background: url(../img/sprite.png) -162px -124px;						
+				}
+
+				&:hover {
+
+					a {
+						color: #FAC472;	
+					}
+
+					&:before {					
+						content: "";
+						position: absolute;
+						left:-175px;
+						top: 10px;	
+						height: 50px;
+						width: 154px;
+						background: url(../img/sprite.png) 0 -120px;		
+					}
+				}
+			}
+
 
 	}
 
@@ -220,6 +262,7 @@
 	 			height: 600px; 			
 	 			overflow: hidden; 
 	 			background: #00214B; 
+	 			margin-bottom: 60px;
 	 									
 
   			.content {
@@ -306,5 +349,92 @@
 				}
 			}
 		}
+
+
+
+			.tester_container {
+	  			position: relative; 			
+	 			width: 100%;
+	 			height: 450px;	
+	 			overflow: hidden; 
+	 			background: #142C3B; 
+	 			margin-bottom: 60px;
+	 									
+
+  			.content {
+  				width: 100%;
+			  	text-transform: uppercase;
+				color: #111;
+				font-weight: 900;
+			 	position: absolute;
+				top: 0;
+				left: 0;				
+				z-index: 1;
+
+				
+				p {
+					color: #00B2E7 ;
+					line-height: 24px;
+
+					span {
+						color: #B92C2D;
+					}
+				}
+				
+
+			
+
+				.answer {
+					padding: 120px 0 0 0;	
+					padding-left: 52%;					
+
+
+					li {
+						color: #00BDA3;
+						position: relative;
+						margin:0 0 10px 25px;
+
+						
+						span {
+						color: #C3D93B;
+						}							
+																							
+					}		
+					
+				}
+
+
+			}
+
+			.test {
+			 	position: absolute;
+				top: 0;
+				left: 0;
+				width: 600px;
+			 	height: 450px;
+			 	z-index: 2;
+
+			 	img {
+				 	width: 525px;
+				  	height: 450px;				  	
+				}
+			}
+
+
+			.dev {
+			 	position: absolute;
+				top:0;
+				right: 0;
+				width: 520px;
+			 	height: 450px;
+			 	z-index: 2;
+
+			 	img {
+				 	width: 600px;
+				  	height: 450px;
+				}
+			}
+		}
+	
 
 }	
