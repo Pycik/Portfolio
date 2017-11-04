@@ -362,7 +362,7 @@
 }
 
 .top_block .tester_container .content .answer {
-  padding: 120px 0 0 0;
+  padding: 40px 0 0 0;
   padding-left: 52%;
 }
 
@@ -374,6 +374,11 @@
 
 .top_block .tester_container .content .answer li span {
   color: #C3D93B;
+}
+
+.top_block .tester_container .content .devtext {
+  font-size: 18px;
+  margin-top: -170px;
 }
 
 .top_block .tester_container .test {
